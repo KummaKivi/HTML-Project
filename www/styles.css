@@ -1,0 +1,26 @@
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav {
+    display: inline-block; /* Ensures boxes stay in line */
+    padding: 10px 20px;   
+    margin: 0 10px;       /* Add margin between boxes */
+    border: 2px solid #241e1e; /* Add a subtle border */
+    border-radius: 5px;   /* Round the corners */
+    background-color: #060505;
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #f1e5e5;          /* Set link color */
+}
