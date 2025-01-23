@@ -3,6 +3,16 @@ body {
   background-color: #5e6897;  
 }
 
+header {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(36, 30, 30, 0.6);
+  margin: 0 auto;
+}
+
 header nav ul {
   list-style: none;
   margin: 0;
@@ -20,9 +30,9 @@ nav {
   display: inline-block;
   padding: 10px 20px;   
   margin: 0 10px;     
-  border: 2px solid #241e1e; 
+  border: 2px solid rgba(36, 30, 30,);
   border-radius: 5px;
-  background-color: #302a2a;
+  background-color: rgba(36, 30, 30,);
 }
 
 nav a {
@@ -34,4 +44,29 @@ nav a {
 header nav:first-of-type img { 
   height: 30px; /* Adjust the height as needed */
   width: auto;  /* Maintain aspect ratio */
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 90%; /* Make header full width on smaller screens */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+
+  header nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center vertically */
+  }
+
+  header nav li {
+    margin: 10px 0; /* Remove horizontal margin, keep vertical */
+  }
+
+  nav {
+    margin: 5px 0; /* Reduce horizontal margin */
+  }
+
+  /* Target images within the first nav */
+  header nav:first-of-type img {
+    height: 20px; /* Adjust height for smaller screens */ 
+  }
 }
