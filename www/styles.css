@@ -82,10 +82,10 @@ header nav:first-of-type img {
   right: 0;
   left: 0;
   display: inline-block;
-  position: relative;
+  position: absolute;
   color: white;
   background-color: rgba(33, 42, 49, 1);
-  top: 392.5px;
+  top: 400px;
   text-align: center;
   align-items: center;
   z-index: 500;
