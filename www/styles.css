@@ -81,18 +81,23 @@ header nav:first-of-type img {
   height: 200px;
   right: 0;
   left: 0;
-  display: flex;
+  display: inline-block;
+  position: relative;
   color: white;
   background-color: rgba(33, 42, 49, 1);
-  position: absolute;
-  bottom: 92.1px;
+  top: 392.5px;
+  text-align: center;
+  align-items: center;
   z-index: 500;
   margin: 0 auto;
 }
 
 .introduction-text {
-  position: absolute;
-  display: flex;
+  width: 1200px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
   justify-content: space-between;
 }
 
