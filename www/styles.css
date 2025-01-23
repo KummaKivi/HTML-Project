@@ -10,15 +10,19 @@ header {
   height: auto;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(36, 30, 30, 0.6);
-  background-size: cover;
+  background-color: rgba(33, 42, 49, 0.6);
   margin: 0 auto;
 }
 
-header nav ul {
+header .header {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -27,18 +31,23 @@ header nav ul {
   align-items: center;
 }
 
-header nav li {
+.header nav li {
   display: inline-block;
   margin: 10px;
+}
+
+.language nav {
+  width: 98.9px;
+  text-align: right;
 }
 
 nav {
   display: inline-block;
   padding: 10px 20px;   
   margin: 0 10px;     
-  border: 2px solid rgba(36, 30, 30,);
+  border: 2px solid rgba(33, 42, 49,);
   border-radius: 5px;
-  background-color: rgba(36, 30, 30,);
+  background-color: rgba(33, 42, 49,);
 }
 
 nav a {
