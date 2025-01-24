@@ -116,17 +116,22 @@ header nav:first-of-type img {
   margin: 0;
 }
 
-.footer {
+.footer-background {
   width: 100%;
-  display: flex;
+  background-color: rgba(47, 57, 68, 1);
+  position: absolute;
   left: 0;
   right: 0;
-  position: absolute;
+}
+
+.footer {
+  width: 1200px;
+  display: flex;
   background-color: rgba(47, 57, 68, 1);
   color: white;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /* Target images within the footer */
