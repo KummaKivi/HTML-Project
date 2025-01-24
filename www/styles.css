@@ -98,8 +98,9 @@ header nav:first-of-type img {
 }
 
 .introduction h1 {
-  margin: 20px 0 0 0;
+  margin: 22px 0 0 0;
   text-align: center;
+  font-size: 28px;
 }
 
 .introduction p {
@@ -212,6 +213,12 @@ button:hover {
   position: relative; /* Add relative positioning */
   top: 425px;
   z-index: 600; /* Set a z-index higher than the image and intro */
+}
+
+.gallery h2 {
+  text-align: center;
+  color: white;
+  font-size: 22px;
 }
 
 .image-grid {
