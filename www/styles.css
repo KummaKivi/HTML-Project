@@ -37,6 +37,10 @@ header .header {
   margin: 10px;
 }
 
+.nimi nav {
+  width: 98.9px;
+}
+
 .language nav {
   width: 98.9px;
   text-align: right;
@@ -112,6 +116,11 @@ header nav:first-of-type img {
   margin: 0;
 }
 
+/* Target images within the first nav */
+footer nav:first-of-type img { 
+  height: 30px; /* Adjust the height as needed */
+  width: auto;  /* Maintain aspect ratio */
+}
 
 @media (max-width: 480px) {
   header {
