@@ -263,4 +263,44 @@ button:hover {
   cursor: pointer;
 }
 }
-/* - - - - */
+
+input, textarea {
+  width: 100%; /* Make input and textarea fields take full width */
+  padding: 10px; /* Add padding for better spacing inside the fields */
+  font-size: 16px; /* Make text inside the fields larger */
+  border-radius: 0px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  font: 1em sans-serif;
+}
+
+textarea {
+  height: 150px; /* Make the textarea taller */
+}
+
+/* Add some basic styling for form layout */
+form {
+  max-width: 600px; /* Limit the form width */
+  margin: 0 auto; /* Center the form */
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049; /* Change color on hover */
+}
