@@ -263,6 +263,7 @@ button:hover {
   color: white;
   cursor: pointer;
 }
+/* comment */
 
 input, textarea {
   width: 100%; /* Make input and textarea fields take full width */
