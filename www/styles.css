@@ -259,9 +259,9 @@ button:hover {
 
 .lightbox-content img {
   position: relative;
-  left: 30px;
-  width: 90%;
-  height: 90%;
+  left: 62.5px;
+  width: 80%;
+  height: 80%;
 }
 
 /* comment */
