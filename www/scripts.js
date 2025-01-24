@@ -1,13 +1,14 @@
-const images = document.querySelectorAll('.image-grid img');
 const lightbox = document.querySelector('.lightbox');
-const lightboxImg = document.querySelector('.lightbox-content img');
-const closeLightbox = document.querySelector('.close-lightbox');
+const lightboxImage = lightbox.querySelector('img');
+const closeLightbox = lightbox.querySelector('.close-lightbox');
+const imageGrid = document.querySelector('.image-grid');
 
-images.forEach(image => {
-  image.addEventListener('click', () => {
-    lightboxImg.src = image.src;
+imageGrid.addEventListener('click', (event) => {
+  if (event.target.tagName === 'IMG') {
+    const imageSrc = event.target.dataset.lightbox;
+    lightboxImage.src = `images/${imageSrc}.jpg`; // Assuming enlarged images are in the images folder
     lightbox.style.display = 'flex';
-  });
+  }
 });
 
 closeLightbox.addEventListener('click', () => {
