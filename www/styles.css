@@ -99,6 +99,7 @@ header nav:first-of-type img {
 
 .introduction h1 {
   margin: 20px 0 0 0;
+  text-align: center;
 }
 
 .introduction p {
@@ -109,9 +110,8 @@ header nav:first-of-type img {
   width: 600px;
   position: relative;
   display: inline-block;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
+  text-align: left;
+  justify-content: center;
   margin: 0;
 }
 
