@@ -199,6 +199,7 @@ button {
 button:hover {
   background-color: #45a049; /* Change color on hover */
 }
+}
 
 /*front page mini gallery*/
 .gallery {
@@ -261,7 +262,6 @@ button:hover {
   font-size: 30px;
   color: white;
   cursor: pointer;
-}
 }
 
 input, textarea {
