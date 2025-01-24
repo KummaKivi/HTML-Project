@@ -187,10 +187,9 @@ button:hover {
   background-color: #45a049; /* Change color on hover */
 }
 
-/*font page mini gallery*/
+/*front page mini gallery*/
 .gallery {
   padding: 50px 0;
-  /* Add some padding to the gallery section */
 }
 
 .image-grid {
