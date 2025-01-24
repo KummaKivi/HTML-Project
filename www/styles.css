@@ -207,7 +207,9 @@ button:hover {
 
 /*front page mini gallery*/
 .gallery {
-  padding: 50px 0;
+  padding: 200px 0; /* Adjust the top padding to move the gallery down */
+  position: relative; /* Add relative positioning */
+  z-index: 1; /* Set a z-index higher than the image and intro */
 }
 
 .image-grid {
