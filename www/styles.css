@@ -116,8 +116,21 @@ header nav:first-of-type img {
   margin: 0;
 }
 
-/* Target images within the first nav */
-footer nav:first-of-type img { 
+.footer {
+  width: 100%;
+  display: flex;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(47, 57, 68, 1);
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Target images within the footer */
+.footer:first-of-type img { 
   height: 30px; /* Adjust the height as needed */
   width: auto;  /* Maintain aspect ratio */
 }
