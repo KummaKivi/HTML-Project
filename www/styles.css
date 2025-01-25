@@ -139,6 +139,18 @@ header nav:first-of-type img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+.about-text {
+  width: 600px;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  text-align: left;
+  color: white;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
 .footer-background {
   width: 100%;
   background-color: rgba(47, 57, 68, 1);
