@@ -6,18 +6,18 @@ body {
 html, body {
   width: auto;
   height: 100%;
-  margin: 0;
+  overflow: auto;
+  margin: 0 auto;
 }
 
 header {
   position: fixed;
   width: 100%;
   height: auto;
-  top: 0;
-  left: 0;
   background-color: rgba(33, 42, 49, 0.6);
   margin: 0 auto;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header .header {
@@ -42,12 +42,17 @@ header .header {
   margin: 10px;
 }
 
+.header nav p {
+  display: inline-block;
+  margin: 10px;
+}
+
 .nimi nav {
-  width: 98.9px;
+  width: auto;
 }
 
 .language nav {
-  width: 98.9px;
+  width: 108.033px;
   text-align: right;
 }
 
@@ -71,46 +76,41 @@ header nav:first-of-type img {
   width: auto;  /* Maintain aspect ratio */
 }
 
-.meta {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  max-height: 600px;
-  height: 100%;
+.background-image {
+  width: auto; /* Set the width of the container */
+  height: 400px; /* Set the height of the container */
+  overflow: hidden; /* Hide any overflow */
 }
 
-.intro {
-  text-align: center;
+.meta {
+  width: 100%; /* Image width should be 100% of the container */
+  height: 100%; /* Set the image height to 100% of the container */
+  object-fit: cover; /* Ensure the image covers the entire container and crops overflow */
 }
 
 .intro .introduction {
   width: 100%;
-  height: 150px;
-  right: 0;
-  left: 0;
+  height: auto;
   display: inline-block;
-  position: absolute;
+  position: sticky;
+  top: 200px;
   color: white;
   background-color: rgba(47, 57, 68, 1);
-  top: 468px;
   text-align: center;
   align-items: center;
   z-index: 500;
   margin: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-
 }
 
 .introduction h1 {
-  margin: 22px 0 0 0;
+  margin: 23.6px 0 23.6px 0;
   text-align: center;
   font-size: 28px;
 }
 
 .introduction p {
-  margin: 20px 0 0 0;
+  margin: 0 0 23.6px 0;
 }
 
 .introduction-text {
@@ -124,18 +124,15 @@ header nav:first-of-type img {
 
 .about .introduction {
   width: 100%;
-  height: 80px;
-  right: 0;
-  left: 0;
+  height: auto;
   display: inline-block;
-  position: absolute;
+  position: relative;
   color: white;
   background-color: rgba(47, 57, 68, 1);
-  top: 75px;
   text-align: center;
   align-items: center;
   z-index: 500;
-  margin: 0;
+  margin: 3px 0 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -143,7 +140,7 @@ header nav:first-of-type img {
   width: 600px;
   height: auto;
   position: relative;
-  display: inline-block;
+  padding: 0px;
   align-items: center;
   text-align: left;
   color: white;
@@ -151,30 +148,78 @@ header nav:first-of-type img {
   margin: 0 auto;
 }
 
+.about-text p {
+  margin: 23.6px 0 23.6px 0;
+}
+
 .footer-background {
   width: 100%;
   background-color: rgba(47, 57, 68, 1);
-  position: relative;
-  top: 200px;
-  left: 0;
-  right: 0;
-  padding: 0px;
+  padding: 0;
+  margin: 0 auto;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-background2 {
+  width: 100%;
+  background-color: rgba(47, 57, 68, 1);
+  padding: 0;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer nav {
+  width: auto;
 }
 
 .footer {
   width: 1200px;
+  max-width: 90%;
+  height: auto;
   display: flex;
   background-color: rgba(47, 57, 68, 1);
   color: white;
   text-align: left;
   margin: 0 auto;
+  padding: 0;
   justify-content: space-between;
+  position: relative;
+  align-items: center;
 }
 
 /* Target images within the footer */
-.footer:first-of-type img { 
-  height: 30px; /* Adjust the height as needed */
-  width: auto;  /* Maintain aspect ratio */
+.footer .social-media {
+  display: flex;
+  height: 34px;
+}
+
+.footer .icon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .icon-container img {
+  height: 30px;
+  width: auto;
+  margin: -4px 0 -4px 0;
+}
+
+.footer .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .text-container p {
+  text-align: left;
+  margin: 3px 0 3px 0;
+}
+
+.footer .text-container h3 {
+  margin: 0;
+  padding: 0 0 20px 0;
 }
 
 @media (max-width: 480px) {
@@ -245,22 +290,26 @@ button:hover {
 
 /*front page mini gallery*/
 .gallery {
-  padding: 200px 0; /* Adjust the top padding to move the gallery down */
+  padding: 0px 23.6px 23.6px 23.6px; /* Adjust the top padding to move the gallery down */
   position: relative; /* Add relative positioning */
-  top: 425px;
   z-index: 600; /* Set a z-index higher than the image and intro */
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .gallery h2 {
   text-align: center;
   color: white;
   font-size: 22px;
+  margin: 47.2px 0 23.6px 0;
 }
 
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   /* Responsive grid */
+  padding: 23.6px 0 23.6px 0;
   gap: 20px;
 }
 
