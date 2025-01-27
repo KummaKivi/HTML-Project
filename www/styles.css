@@ -352,10 +352,6 @@ textarea {
 }
 
 /* Add some basic styling for form layout */
-form {
-  max-width: 600px; /* Limit the form width */
-  margin: 0 auto; /* Center the form */
-}
 
 label {
   font-size: 18px;
@@ -467,6 +463,7 @@ textarea {
 form {
   max-width: 600px; /* Limit the form width */
   margin: 0 auto; /* Center the form */
+  padding: 47.2px 0 47.2px 0;
 }
 
 label {
