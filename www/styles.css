@@ -110,8 +110,7 @@ header nav img {
   width: 100%;
   height: auto;
   display: inline-block;
-  position: sticky;
-  top: 200px;
+  position: relative;
   color: white;
   background-color: rgba(47, 57, 68, 1);
   text-align: center;
