@@ -462,6 +462,10 @@ button:hover {
   background-color: #45a049; /* Change color on hover */
 }
 
+main {
+  padding-top: 70px;
+}
+
 @media (max-width: 480px) {
 
   body {
