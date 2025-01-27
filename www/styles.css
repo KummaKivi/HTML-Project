@@ -73,17 +73,25 @@ nav a {
   align-items: center;
 }
 
+nav li a:hover {
+  text-decoration: underline
+}
+
 /* Target images within the first nav */
 header nav img { 
   height: 30px; /* Adjust the height as needed */
-  width: 20px;  /* Maintain aspect ratio */
+  width: 25px;  /* Maintain aspect ratio */
 }
 
-nav span {
+.language span {
   font-size: 14px; /* Set text size */
   white-space: nowrap; /* Prevent text from wrapping to a new line */
   text-decoration: underline;
   margin-left: 4px;
+}
+
+.language span:hover {
+  text-decoration: none;
 }
 
 .background-image {
@@ -187,7 +195,7 @@ nav span {
 }
 
 .footer nav {
-  width: auto;
+  width: 220px;
   height: 150px;
 }
 
@@ -203,6 +211,29 @@ nav span {
   padding: 0;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer nav h3 {
+  width: 60px;
+}
+
+.footer nav a {
+  width: 60px;
+  text-decoration: underline;
+}
+
+.footer nav a:hover {
+  text-decoration: none;
 }
 
 /* Target images within the footer */
