@@ -150,7 +150,7 @@ header nav img {
   text-align: center;
   align-items: center;
   z-index: 500;
-  margin: 3px 0 0 0;
+  padding: 65px 0 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -158,7 +158,7 @@ header nav img {
   width: 600px;
   height: auto;
   position: relative;
-  padding: 0px;
+  padding: 23.6px 0 23.6px 0;
   align-items: center;
   text-align: left;
   color: white;
