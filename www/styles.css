@@ -313,30 +313,6 @@ header nav img {
   margin: 0; /* Remove default margin */
 }
 
-@media (max-width: 480px) {
-  header {
-    width: 90%; /* Make header full width on smaller screens */
-    padding: 1rem; /* Add padding for better spacing */
-  }
-
-  header nav ul {
-    flex-direction: column; /* Stack navigation items vertically */
-    align-items: center; /* Center vertically */
-  }
-
-  header nav li {
-    margin: 10px 0; /* Remove horizontal margin, keep vertical */
-  }
-
-  nav {
-    margin: 5px 0; /* Reduce horizontal margin */
-  }
-
-  /* Target images within the first nav */
-  header nav:first-of-type img {
-    height: 20px; /* Adjust height for smaller screens */ 
-  }
-
 input, textarea {
   width: 100%; /* Make input and textarea fields take full width */
   padding: 10px; /* Add padding for better spacing inside the fields */
@@ -372,7 +348,6 @@ button {
 
 button:hover {
   background-color: #45a049; /* Change color on hover */
-}
 }
 
 /*front page mini gallery*/
@@ -485,4 +460,418 @@ button {
 
 button:hover {
   background-color: #45a049; /* Change color on hover */
+}
+
+@media (max-width: 480px) {
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 42, 49);
+    margin: 0; /* Remove default body margins */
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(33, 42, 49, 0.6);
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 0; /* Add padding for mobile */
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add padding for mobile */
+  }
+  
+  .header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Make navigation vertical on mobile */
+    align-items: center;
+    position: absolute; /* Position navigation off-screen initially */
+    top: 60px; /* Adjust top position as needed */
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 42, 49, 0.8); /* Add background to mobile menu */
+    text-align: center;
+    visibility: hidden; /* Hide navigation initially */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .header nav ul.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .header nav li {
+    display: block;
+    margin: 15px 0;
+  }
+  
+  .header nav p {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .nimi nav {
+    width: auto;
+  }
+  
+  .language nav {
+    width: auto;
+    text-align: left;
+    display: flex;
+  }
+  
+  nav {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid rgba(33, 42, 49,);
+    border-radius: 5px;
+    background-color: rgba(33, 42, 49,);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f1e5e5;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  header nav img {
+    height: 30px;
+    width: 25px;
+  }
+  
+  .language span {
+    font-size: 14px;
+    white-space: nowrap;
+    text-decoration: underline;
+    margin-left: 4px;
+  }
+  
+  .language span:hover {
+    text-decoration: none;
+  }
+  
+  .background-image {
+    width: 100%; /* Make background image responsive */
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .meta {
+    width: 100%;
+    height: auto; /* Adjust height for mobile */
+    object-fit: cover;
+  }
+  
+  .intro .introduction {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative; /* Use relative positioning for better control */
+    top: 0;
+    color: white;
+    background-color: rgba(47, 57, 68, 1);
+    text-align: center;
+    padding: 20px; /* Add padding for mobile */
+    z-index: 500;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .introduction h1 {
+    margin: 23.6px 0 23.6px 0;
+    text-align: center;
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+  
+  .introduction p {
+    margin: 0 0 23.6px 0;
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  
+  .introduction-text {
+    width: 90%; /* Adjust width for mobile */
+    position: relative;
+    display: block;
+    text-align: left;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .about .introduction {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    color: white;
+    background-color: rgba(47, 57, 68, 1);
+    text-align: center;
+    padding: 20px; /* Add padding for mobile */
+    z-index: 500;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-text {
+    width: 90%; /* Adjust width for mobile */
+    height: auto;
+    position: relative;
+    padding: 23.6px 0 23.6px 0;
+    align-items: center;
+    text-align: left;
+    color: white;
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+  
+  .about-text p {
+    margin: 23.6px 0 23.6px 0;
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  
+  .footer-background {
+    width: 100%;
+    height: auto; /* Remove fixed height */
+    background-color: rgba(47, 57, 68, 1);
+    padding: 20px 0; /* Add padding for mobile */
+    margin: 0 auto;
+    position: relative; /* Remove sticky positioning */
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer-background2 {
+    width: 100%;
+    height: auto; /* Remove fixed height */
+    background-color: rgba(47, 57, 68, 1);
+    padding: 20px 0; /* Add padding for mobile */
+    margin: 0 auto;
+    position: relative; /* Remove sticky positioning */
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Make footer vertical on mobile */
+    align-items: center; /* Center content vertically */
+    background-color: rgba(47, 57, 68, 1);
+    color: white;
+    margin: 0 auto;
+    padding: 20px 0; /* Add padding for mobile */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .footer nav {
+    width: 100%; /* Make navigation full width on mobile */
+    height: auto;
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+  
+  .footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Make navigation vertical */
+    align-items: start;
+  }
+  
+  .footer nav h3 {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  
+  .footer nav a {
+    width: auto;
+    text-decoration: underline;
+    margin-bottom: 5px; /* Add spacing between links */
+  }
+  
+  .footer nav a:hover {
+    text-decoration: none;
+  }
+  
+  input, textarea {
+    width: 100%; /* Make input and textarea fields take full width */
+    padding: 10px; /* Add padding for better spacing inside the fields */
+    font-size: 16px; /* Make text inside the fields larger */
+    border-radius: 0px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    font: 1em sans-serif;
+  }
+  
+  textarea {
+    height: 150px; /* Make the textarea taller */
+  }
+  
+  /* Add some basic styling for form layout */
+  
+  label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Change color on hover */
+  }
+  
+  /*front page mini gallery*/
+  .gallery {
+    padding: 0px 23.6px 23.6px 23.6px; /* Adjust the top padding to move the gallery down */
+    position: relative; /* Add relative positioning */
+    z-index: 600; /* Set a z-index higher than the image and intro */
+    width: auto;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin: 47.2px 0 23.6px 0;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid */
+    padding: 23.6px 0 23.6px 0;
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5x;
+    cursor: pointer;
+    /* Add cursor pointer to indicate clickability */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05);
+    /* Slightly scale up image on hover */
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 700;
+    /* Ensure lightbox is on top */
+  }
+  
+  .lightbox-content {
+    position: fixed;
+    top: 75px;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .lightbox-content img {
+    position: relative;
+    left: 62.5px;
+    width: 80%;
+    height: 80%;
+  }
+  
+  /* comment */
+  
+  input, textarea {
+    width: 290px; /* Make input and textarea fields take full width */
+    padding: 10px 0 10px 10px; /* Add padding for better spacing inside the fields */
+    font-size: 16px; /* Make text inside the fields larger */
+    border-radius: 0px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    font: 1em sans-serif;
+  }
+  
+  textarea {
+    height: 150px; /* Make the textarea taller */
+  }
+  
+  /* Add some basic styling for form layout */
+  form {
+    max-width: auto; /* Limit the form width */
+    width: auto;
+    margin: 0 auto; /* Center the form */
+    padding: 47.2px 47.2px 47.2px 47.2px;
+
+  }
+  
+  label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Change color on hover */
+  }
 }
