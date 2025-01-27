@@ -49,6 +49,8 @@ header .header {
 
 .nimi nav {
   width: auto;
+  color: #f1e5e5;
+  font-size: 20px;
 }
 
 .language nav {
