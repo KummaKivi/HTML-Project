@@ -63,9 +63,9 @@ nav {
   display: inline-block;
   padding: 10px 20px;   
   margin: 0 10px;     
-  border: 2px solid rgba(33, 42, 49);
+  border: 2px solid rgba(33, 42, 49, 0);
   border-radius: 5px;
-  background-color: rgba(33, 42, 49);
+  background-color: rgba(33, 42, 49, 0);
 }
 
 nav a {
@@ -548,9 +548,9 @@ main {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
-    border: 2px solid rgba(33, 42, 49);
+    border: 2px solid rgba(33, 42, 49, 0);
     border-radius: 5px;
-    background-color: rgba(33, 42, 49);
+    background-color: rgba(33, 42, 49, 0);
   }
   
   nav a {
