@@ -895,7 +895,7 @@ button:hover {
   }
   
   .lightbox {
-    display: none;
+    display: none !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -966,7 +966,7 @@ button:hover {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) { 
 
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -1350,9 +1350,9 @@ button:hover {
     transform: scale(1.05);
     /* Slightly scale up image on hover */
   }
-  
+
   .lightbox {
-    display: none;
+    display: none !important;
     position: fixed;
     top: 0;
     left: 0;
