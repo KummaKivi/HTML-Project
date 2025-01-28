@@ -454,16 +454,14 @@ button:hover {
 
 .lightbox-content {
   position: fixed;
-  top: 75px;
   max-width: 90%;
   max-height: 90%;
 }
 
 .lightbox-content img {
   position: relative;
-  left: 62.5px;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
 }
 
 /* comment */
@@ -1369,16 +1367,14 @@ button:hover {
   
   .lightbox-content {
     position: fixed;
-    top: 75px;
     max-width: 90%;
     max-height: 90%;
   }
   
   .lightbox-content img {
     position: relative;
-    left: 62.5px;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
   }
   
   /* comment */
