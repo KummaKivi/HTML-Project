@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="se">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery Page</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Svensk sida</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -12,16 +12,17 @@
             <div class="nimi">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Kaisa Nyström</a></li>
+                        <li>Kaisa Nyström</li>
                     </ul>
                 </nav>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li> 
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
+
                 </ul>
             </nav>
 
@@ -35,56 +36,37 @@
             </div>
         </div>
     </header>
+    <!--- comment --->
+    <div class="dropdown">
+        <!-- Image as the dropdown button -->
+        <button class="dropdown-button" onclick="toggleDropdown()">
+            <img src="images/menu.png" alt="Menu Icon" width="30" height="30">
+            </button>
+    <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    </div>
     
-<!--- comment --->
-<div class="dropdown">
-    <!-- Image as the dropdown button -->
-    <button class="dropdown-button" onclick="toggleDropdown()">
-        <img src="images/menu.png" alt="Menu Icon" width="30" height="30">
-        </button>
-<div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</div>
-</div>
-
     <section class="about">
         <div class="introduction">
             <div class="introduction-h1">
-                <h1>Gallery</h1>
+                <h1>Svenska</h1>
             </div>
         </div>
     </section>
 
-    <main>
-        <section class="gallery">
-            <div class="container">
-                <div class="image-grid">
-                <img data-lightbox="gallery7" src="images/gallery7.jpg" alt="Gallery Image 7">
-                <img data-lightbox="gallery2" src="images/gallery2.jpg" alt="Gallery Image 2">
-                <img data-lightbox="gallery3" src="images/gallery3.jpg" alt="Gallery Image 3">
-                <img data-lightbox="gallery4" src="images/gallery4.jpg" alt="Gallery Image 4">
-                <img data-lightbox="gallery5" src="images/gallery5.jpg" alt="Gallery Image 5">
-                <img data-lightbox="gallery6" src="images/gallery6.jpg" alt="Gallery Image 6">
-                <img data-lightbox="gallery1" src="images/gallery1.jpg" alt="Gallery Image 1">
-                <img data-lightbox="gallery8" src="images/gallery8.jpg" alt="gallery Image 8">
-                <img data-lightbox="gallery9" src="images/gallery9.jpg" alt="gallery Image 9">
-                <img data-lightbox="gallery10" src="images/gallery10.jpg" alt="gallery Image 10">
-                <img data-lightbox="gallery11" src="images/gallery11.jpg" alt="gallery Image 11">
-                <img data-lightbox="gallery12" src="images/gallery12.jpg" alt="gallery Image 12">
-                </div>
-            </div>
-        </section>
-        
-        <div class="lightbox">
-        <div class="lightbox-content">
-            <img src="-" alt="Enlarged Image">
-            <span class="close-lightbox">&times;</span>
-        </div>
-        </div>
-    </main>
+    <div class="about-text">
+        <h3>Kort på svenska</h3>
+        <p>Välkommen till min hemsida, där jag delar min passion för måleri och den kreativa processen. Här hittar du en plats för att utforska och uppskatta mina målningar, samt få en inblick i mitt arbete som konstnär. Jag strävar efter att skapa en atmosfär där mina verk kan inspirera och väcka känslor hos en bredare publik. Mina målningar omfattar olika stilar och tekniker, och varje verk är ett uttryck för mina tankar och känslor.</p>
+        <p>Jag tror på att måleri är ett kraftfullt verktyg för att kommunicera och utforska världen runt oss. Genom att tänka fritt och experimentera hoppas jag kunna inspirera andra att också våga uttrycka sina egna idéer. Utforska mina samlingar och bli inspirerad av mina verk!</p>
+        <h3>Välj språk</h3>
+    </div>
+
+
+
 
     <footer>
         <div class="footer-background">
@@ -133,7 +115,5 @@
     <div class="copyright-footer">
         <p class="copyright-text">&copy;2025 Gallery. All rights reserved.</p>
     </div>
-    
-    <script src="scripts.js"></script>
 </body>
 </html>
