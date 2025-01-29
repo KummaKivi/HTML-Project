@@ -65,6 +65,18 @@ position: relative;
 display: none;/* Adjust the value as needed */
 }
 
+.mobile-header h1 {
+  position: relative;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(47, 57, 68);
+}
+
 /* Button styling (no text, only image) */
 .dropdown-button {
   background-color: transparent; /* No background color */
@@ -1069,6 +1081,18 @@ button:hover {
     display: inline;
     left: 95%; /* Move to the right */
     z-index: 1000;
+  }
+
+  .mobile-header h1 {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(47, 57, 68);
   }
 
 /* Button styling (no text, only image) */
