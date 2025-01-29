@@ -61,8 +61,10 @@ header .header {
 
 /* Style for the dropdown container */
 .dropdown {
-  position: relative;
-  display: none;
+position: relative;
+display: inline-block;
+float: right; /* Move to the right */
+margin-right: 10px; /* Adjust the value as needed */
 }
 
 /* Button styling (no text, only image) */
@@ -586,9 +588,12 @@ button:hover {
   }
 
   /* Style for the dropdown container */
-.dropdown {
+  .dropdown {
   position: relative;
   display: inline-block;
+  float: right; /* Move to the right */
+  margin-right: 10px; /* Adjust the value as needed */
+
 }
 
 /* Button styling (no text, only image) */
@@ -597,6 +602,7 @@ button:hover {
   border: none; /* No border */
   cursor: pointer;
   padding: 0; /* Remove any default padding */
+  
 }
 
 /* Dropdown menu hidden by default */
@@ -607,6 +613,8 @@ button:hover {
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  right: 0; /* Align to the right */
+  left: auto; /* Override any left positioning */
 }
 
 /* Links inside the dropdown */
@@ -1044,10 +1052,12 @@ button:hover {
   }
 
   /* Style for the dropdown container */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right; /* Move to the right */
+    margin-right: 10px; /* Adjust the value as needed */
+  }
 
 /* Button styling (no text, only image) */
 .dropdown-button {
