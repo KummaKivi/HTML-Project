@@ -62,9 +62,7 @@ header .header {
 /* Style for the dropdown container */
 .dropdown {
 position: relative;
-display: inline-block;
-float: right; /* Move to the right */
-margin-right: 10px; /* Adjust the value as needed */
+display: none;/* Adjust the value as needed */
 }
 
 /* Button styling (no text, only image) */
@@ -590,9 +588,10 @@ button:hover {
   /* Style for the dropdown container */
   .dropdown {
   position: relative;
-  display: inline-block;
+  display: inline;
   float: right; /* Move to the right */
-  margin-right: 10px; /* Adjust the value as needed */
+  z-index: 1000;
+  margin-right: 10px;
 
 }
 
@@ -1054,9 +1053,9 @@ button:hover {
   /* Style for the dropdown container */
   .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline;
     float: right; /* Move to the right */
-    margin-right: 10px; /* Adjust the value as needed */
+    z-index: 1000;
   }
 
 /* Button styling (no text, only image) */
