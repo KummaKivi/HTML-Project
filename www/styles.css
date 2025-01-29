@@ -80,7 +80,9 @@ display: none;/* Adjust the value as needed */
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 1000;
+  right: 0; /* Align to the right */
+  left: auto; /* Override any left positioning */
 }
 
 /* Links inside the dropdown */
@@ -1074,6 +1076,8 @@ button:hover {
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  right: 0; /* Align to the right */
+  left: auto; /* Override any left positioning */
 }
 
 /* Links inside the dropdown */
