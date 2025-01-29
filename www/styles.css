@@ -65,7 +65,7 @@ position: relative;
 display: none;/* Adjust the value as needed */
 }
 
-.mobile-header h1 {
+.mobile-header h2 {
   position: relative;
   display: none;
   text-align: center;
@@ -74,6 +74,7 @@ display: none;/* Adjust the value as needed */
   color: white;
   margin: 0 auto;
   padding: 20px;
+  font-size: 25px;
   background-color: rgb(47, 57, 68);
 }
 
