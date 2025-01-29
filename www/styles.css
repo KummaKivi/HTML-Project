@@ -609,7 +609,7 @@ button:hover {
   margin-right: 10px;
 }
 
-.mobile-header h1 {
+.mobile-header h2 {
   position: relative;
   display: flex;
   text-align: center;
@@ -1084,7 +1084,7 @@ button:hover {
     z-index: 1000;
   }
 
-  .mobile-header h1 {
+  .mobile-header h2 {
     position: relative;
     display: flex;
     text-align: center;
