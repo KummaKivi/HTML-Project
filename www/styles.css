@@ -591,7 +591,7 @@ button:hover {
   .dropdown {
   position: relative;
   display: inline;
-  float: right; /* Move to the right */
+  left: 90%; /* Move to the right */
   z-index: 1000;
   margin-right: 10px;
 
@@ -694,7 +694,7 @@ button:hover {
     height: auto;
     display: block;
     position: relative; /* Use relative positioning for better control */
-    top: 0;
+    top: -4px;
     color: white;
     background-color: rgba(47, 57, 68, 1);
     text-align: center;
@@ -975,7 +975,7 @@ button:hover {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1000px) { 
+@media (min-width: 768px) and (max-width: 1024px) { 
 
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -1056,7 +1056,7 @@ button:hover {
   .dropdown {
     position: relative;
     display: inline;
-    float: right; /* Move to the right */
+    left: 95%; /* Move to the right */
     z-index: 1000;
   }
 
@@ -1155,7 +1155,7 @@ button:hover {
     height: auto;
     display: block;
     position: relative; /* Use relative positioning for better control */
-    top: 0;
+    top: -4px;
     color: white;
     background-color: rgba(47, 57, 68, 1);
     text-align: center;
