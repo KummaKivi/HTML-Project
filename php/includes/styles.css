@@ -412,71 +412,126 @@ button:hover {
   background-color: #45a049; /* Change color on hover */
 }
 
-/*front page mini gallery*/
+/* Front Page Mini Gallery */
 .gallery {
   padding: 0px 23.6px 23.6px 23.6px; /* Adjust the top padding to move the gallery down */
   position: relative; /* Add relative positioning */
   z-index: 600; /* Set a z-index higher than the image and intro */
-  width: 1200px;
-  align-items: center;
-  margin: 0 auto;
+  width: 1200px; /* Fixed width for the gallery */
+  align-items: center; /* Center align items */
+  text-align: center; /* Center text */
+  margin: 0 auto; /* Center the gallery horizontally */
 }
 
-.gallery h2 {
-  text-align: center;
-  color: white;
-  font-size: 22px;
-  margin: 47.2px 0 23.6px 0;
-}
-
+/* Image Grid */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
   padding: 23.6px 0 23.6px 0;
   margin-top: 23.6px;
   gap: 20px;
 }
 
-.image-grid img {
+/* Individual Painting Box */
+.painting-box {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  border: 1px solid #ddd; /* Border for the box */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Inner spacing */
+  background: #f9f9f9; /* Light background */
+  text-align: center; /* Center content */
+  color: white;
+}
+
+/* Image Container */
+.image-container {
   width: 100%;
-  height: auto;
+  height: 200px; /* Fixed height for images */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the container */
+  cursor: pointer; /* Indicate clickable images */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Slightly scale up image on hover */
+}
+
+.gallery h3 {
+  font-size: 14px;
+  color: white !important;
+  
+}
+
+.gallery p {
+  font-size: 12px;
+  color: white !important;
+}
+
+/* Text Styles */
+.painting-box h2 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: white;
+}
+
+.painting-box p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: white;
+  flex-grow: 1; /* Allow description to take up remaining space */
+
+}
+
+/* Add to Cart Button */
+.painting-box .add-to-cart {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  /* Add cursor pointer to indicate clickability */
-  transition: transform 0.3s ease;
-  /* Add a smooth transition effect */
+  transition: background 0.3s ease;
 }
 
-.image-grid img:hover {
-  transform: scale(1.05);
-  /* Slightly scale up image on hover */
+.painting-box .add-to-cart:hover {
+  background: #0056b3;
 }
 
+/* Lightbox Styles */
 .lightbox {
   display: none;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
+  align-items: center;
   z-index: 1100;
-  margin-bottom: 0;
-  border-radius: 0;
-  /* Ensure lightbox is on top */
 }
 
 .lightbox-content {
   position: relative;
   max-width: 90%;
+  max-height: 90%;
 }
 
 .lightbox-content img {
-  position: relative;
   width: 100%;
   height: auto;
   max-height: 100%;
+  border-radius: 5px;
 }
 
 /* comment */

@@ -422,6 +422,64 @@ button:hover {
   margin: 0 auto;
 }
 
+/* Parent Container for Painting Boxes */
+.painting-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between boxes */
+}
+
+
+/* Individual Painting Box */
+.painting-box {
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Border for the box */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Inner spacing */
+  text-align: center; /* Center content */
+  background: #f9f9f9; /* Light background */
+}
+
+.painting-box:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+/* Text Styles */
+.painting-box h2 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.painting-box p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.painting-box .price {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Add to Cart Button */
+.painting-box .add-to-cart {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.painting-box .add-to-cart:hover {
+  background: #0056b3;
+}
+
 .gallery h2 {
   text-align: center;
   color: white;
