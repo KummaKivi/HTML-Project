@@ -10,7 +10,6 @@ $paintings = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <div class="contact-form">
-<?php foreach ($paintings as $painting): ?>
     <h2>Contact Us</h2>
     <form id="contact-form">
         <input type="text" name="name" placeholder="Your Name" required>
@@ -18,7 +17,7 @@ $paintings = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
     </form>
-    <?php endforeach; ?>
 </div>
+
 
 <?php include 'includes/contact/footer.html'; ?>
