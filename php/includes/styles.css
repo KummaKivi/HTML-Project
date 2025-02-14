@@ -1,0 +1,1473 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(33, 42, 49);
+}
+
+html, body {
+  width: auto;
+  height: 100%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: rgba(33, 42, 49, 0.6);
+  margin: 0 auto;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .header {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header nav li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.header nav p {
+  display: inline-block;
+  margin: 10px;
+}
+
+.nimi nav {
+  width: auto;
+  color: #f1e5e5;
+  font-size: 20px;
+}
+
+.language nav {
+  width: 150.017px;
+  text-align: left;
+  display: flex;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+position: relative;
+display: none;/* Adjust the value as needed */
+}
+
+.mobile-header h2 {
+  position: relative;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 25px;
+  background-color: rgb(47, 57, 68);
+}
+
+/* Button styling (no text, only image) */
+.dropdown-button {
+  background-color: transparent; /* No background color */
+  border: none; /* No border */
+  cursor: pointer;
+  padding: 0; /* Remove any default padding */
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  right: 0; /* Align to the right */
+  left: auto; /* Override any left positioning */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu when hovering over the button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button img {
+  filter: brightness(0.8); /* Slightly darken the image when hovering */
+}
+
+nav {
+  display: inline-block;
+  padding: 10px 20px;   
+  margin: 0 10px;     
+  border: 2px solid rgba(33, 42, 49, 0);
+  border-radius: 5px;
+  background-color: rgba(33, 42, 49, 0);
+}
+
+nav a {
+  text-decoration: none;
+  color: #f1e5e5;
+  display: flex;
+  align-items: center;
+}
+
+nav li a:hover {
+  text-decoration: underline
+}
+
+/* Target images within the first nav */
+header nav img { 
+  height: 30px; /* Adjust the height as needed */
+  width: 25px;  /* Maintain aspect ratio */
+}
+
+.language span {
+  font-size: 14px; /* Set text size */
+  white-space: nowrap; /* Prevent text from wrapping to a new line */
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.language span:hover {
+  text-decoration: none;
+}
+
+.background-image {
+  width: auto; /* Set the width of the container */
+  height: 400px; /* Set the height of the container */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.meta {
+  width: 100%; /* Image width should be 100% of the container */
+  height: 100%; /* Set the image height to 100% of the container */
+  object-fit: cover; /* Ensure the image covers the entire container and crops overflow */
+}
+
+.intro .introduction {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  color: white;
+  background-color: rgba(47, 57, 68, 1);
+  text-align: center;
+  align-items: center;
+  z-index: 500;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.introduction h1 {
+  margin: 23.6px 0 23.6px 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+.introduction p {
+  margin: 0 0 23.6px 0;
+}
+
+.introduction-text {
+  width: 600px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.title .introduction {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  color: white;
+  background-color: rgba(47, 57, 68, 1);
+  text-align: center;
+  align-items: center;
+  z-index: 500;
+  padding: 65px 0 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+  width: 600px;
+  height: auto;
+  position: relative;
+  padding: 23.6px 0 23.6px 0;
+  align-items: center;
+  text-align: left;
+  color: white;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.about-text p {
+  margin: 23.6px 0 23.6px 0;
+}
+
+.footer-background {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(47, 57, 68, 1);
+  padding: 0;
+  margin: 0 auto;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.footer-background2 {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(47, 57, 68, 1);
+  padding: 0;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 36px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.footer nav {
+  width: 220px;
+  height: 150px;
+}
+
+.footer {
+  width: 1200px;
+  max-width: 90%;
+  height: auto;
+  display: flex;
+  background-color: rgba(47, 57, 68, 1);
+  color: white;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer nav h3 {
+  width: 60px;
+}
+
+.footer nav a {
+  width: 60px;
+  text-decoration: underline;
+}
+
+.footer nav a:hover {
+  text-decoration: none;
+}
+
+/* Target images within the footer */
+
+.footer-content {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  flex-direction: column;
+}
+
+.follow-text {
+  font-size: 18px; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: white; /* White text color */
+  margin: 18.72px 0 18.72px 0; /* Adds space between text and social icons */
+  text-align: left; /* Align the text to the left */
+}
+
+.social-link {
+  display: flex; /* Keep icon and text in a row */
+  align-items: center; /* Vertically align icon and text */
+  text-decoration: none; /* Remove underline from links */
+  margin-bottom: 10px;
+}
+
+.social-link img {
+  width: 30px; /* Set the size of the icons */
+  height: 30px;
+}
+
+.social-link span {
+  font-size: 14px; /* Set text size */
+  white-space: nowrap; /* Prevent text from wrapping to a new line */
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.social-link span:hover {
+  text-decoration: none;
+}
+
+.footer-text {
+  margin-left: 20px; /* Adds space between the social icons and the footer text */
+}
+
+/* Copyright Footer Container */
+.copyright-footer {
+  background-color: #212a31; /* Footer background color */
+  color: #fff; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Padding for spacing */
+  font-size: 14px; /* Font size */
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.copyright-footer2 {
+  background-color: #212a31; /* Footer background color */
+  color: #fff; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Padding for spacing */
+  font-size: 14px; /* Font size */
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+/* Copyright Text */
+.copyright-text {
+  margin: 0; /* Remove default margin */
+}
+
+input, textarea {
+  width: 100%; /* Make input and textarea fields take full width */
+  padding: 10px; /* Add padding for better spacing inside the fields */
+  font-size: 16px; /* Make text inside the fields larger */
+  border-radius: 0px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  font: 1em sans-serif;
+}
+
+textarea {
+  height: 150px; /* Make the textarea taller */
+}
+
+/* Add some basic styling for form layout */
+
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049; /* Change color on hover */
+}
+
+/*front page mini gallery*/
+.gallery {
+  padding: 0px 23.6px 23.6px 23.6px; /* Adjust the top padding to move the gallery down */
+  position: relative; /* Add relative positioning */
+  z-index: 600; /* Set a z-index higher than the image and intro */
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.gallery h2 {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  margin: 47.2px 0 23.6px 0;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Responsive grid */
+  padding: 23.6px 0 23.6px 0;
+  margin-top: 23.6px;
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Add cursor pointer to indicate clickability */
+  transition: transform 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+  /* Slightly scale up image on hover */
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  z-index: 1100;
+  margin-bottom: 0;
+  border-radius: 0;
+  /* Ensure lightbox is on top */
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+}
+
+.lightbox-content img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+/* comment */
+
+input, textarea {
+  width: 100%; /* Make input and textarea fields take full width */
+  padding: 10px; /* Add padding for better spacing inside the fields */
+  font-size: 16px; /* Make text inside the fields larger */
+  border-radius: 0px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  font: 1em sans-serif;
+}
+
+textarea {
+  height: 150px; /* Make the textarea taller */
+}
+
+/* Add some basic styling for form layout */
+form {
+  max-width: 600px; /* Limit the form width */
+  margin: 0 auto; /* Center the form */
+  padding: 47.2px 0 47.2px 0;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049; /* Change color on hover */
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 42, 49);
+    margin: 0; /* Remove default body margins */
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(33, 42, 49, 0.6);
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 0; /* Add padding for mobile */
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add padding for mobile */
+  }
+  
+  .header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Make navigation vertical on mobile */
+    align-items: center;
+    position: absolute; /* Position navigation off-screen initially */
+    top: 60px; /* Adjust top position as needed */
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 42, 49, 0.8); /* Add background to mobile menu */
+    text-align: center;
+    visibility: hidden; /* Hide navigation initially */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .header nav ul.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .header nav li {
+    display: block;
+    margin: 15px 0;
+  }
+  
+  .header nav p {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .nimi nav {
+    width: auto;
+  }
+  
+  .language nav {
+    width: auto;
+    text-align: left;
+    display: flex;
+  }
+
+  /* Style for the dropdown container */
+  .dropdown {
+  position: relative;
+  display: inline;
+  left: 90%; /* Move to the right */
+  z-index: 1000;
+  margin-right: 10px;
+}
+
+.mobile-header h2 {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(47, 57, 68);
+}
+
+/* Button styling (no text, only image) */
+.dropdown-button {
+  background-color: transparent; /* No background color */
+  border: none; /* No border */
+  cursor: pointer;
+  padding: 0; /* Remove any default padding */
+  
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  right: 0; /* Align to the right */
+  left: auto; /* Override any left positioning */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu when hovering over the button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button img {
+  filter: brightness(0.8); /* Slightly darken the image when hovering */
+}
+
+  
+  nav {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid rgba(33, 42, 49, 0);
+    border-radius: 5px;
+    background-color: rgba(33, 42, 49, 0);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f1e5e5;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  header nav img {
+    height: 30px;
+    width: 25px;
+  }
+  
+  .language span {
+    font-size: 14px;
+    white-space: nowrap;
+    text-decoration: underline;
+    margin-left: 4px;
+  }
+  
+  .language span:hover {
+    text-decoration: none;
+  }
+  
+  .background-image {
+    width: 100%; /* Make background image responsive */
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .meta {
+    width: 100%;
+    height: auto; /* Adjust height for mobile */
+    object-fit: cover;
+  }
+  
+  .intro .introduction {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative; /* Use relative positioning for better control */
+    top: -4px;
+    color: white;
+    background-color: rgba(47, 57, 68, 1);
+    text-align: center;
+    padding: 20px; /* Add padding for mobile */
+    z-index: 500;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .introduction h1 {
+    margin: 23.6px 0 23.6px 0;
+    text-align: center;
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+  
+  .introduction p {
+    margin: 0 0 23.6px 0;
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  
+  .introduction-text {
+    width: 90%; /* Adjust width for mobile */
+    position: relative;
+    display: block;
+    text-align: left;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .title .introduction {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    color: white;
+    background-color: rgba(47, 57, 68, 1);
+    text-align: center;
+    padding: 20px; /* Add padding for mobile */
+    z-index: 500;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-text {
+    width: 90%; /* Adjust width for mobile */
+    height: auto;
+    position: relative;
+    padding: 23.6px 0 23.6px 0;
+    align-items: center;
+    text-align: left;
+    color: white;
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+  
+  .about-text p {
+    margin: 23.6px 0 23.6px 0;
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  
+  .footer-background {
+    width: 100%;
+    height: auto; /* Remove fixed height */
+    background-color: rgba(47, 57, 68, 1);
+    padding: 20px 0; /* Add padding for mobile */
+    margin: 0 auto;
+    position: relative; /* Remove sticky positioning */
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer-background2 {
+    width: 100%;
+    height: auto; /* Remove fixed height */
+    background-color: rgba(47, 57, 68, 1);
+    padding: 20px 0; /* Add padding for mobile */
+    margin: 0 auto;
+    position: relative; /* Remove sticky positioning */
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Make footer vertical on mobile */
+    align-items: center; /* Center content vertically */
+    background-color: rgba(47, 57, 68, 1);
+    color: white;
+    margin: 0 auto;
+    padding: 20px 0; /* Add padding for mobile */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .footer nav {
+    width: 100%; /* Make navigation full width on mobile */
+    height: auto;
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+  
+  .footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Make navigation vertical */
+    align-items: start;
+  }
+  
+  .footer nav h3 {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  
+  .footer nav a {
+    width: auto;
+    text-decoration: underline;
+    margin-bottom: 5px; /* Add spacing between links */
+  }
+  
+  .footer nav a:hover {
+    text-decoration: none;
+  }
+  
+  input, textarea {
+    width: 100%; /* Make input and textarea fields take full width */
+    padding: 10px; /* Add padding for better spacing inside the fields */
+    font-size: 16px; /* Make text inside the fields larger */
+    border-radius: 0px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    font: 1em sans-serif;
+  }
+  
+  textarea {
+    height: 150px; /* Make the textarea taller */
+  }
+  
+  /* Add some basic styling for form layout */
+  
+  label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Change color on hover */
+  }
+  
+  /*front page mini gallery*/
+  .gallery {
+    padding: 0px 23.6px 23.6px 23.6px; /* Adjust the top padding to move the gallery down */
+    position: relative; /* Add relative positioning */
+    z-index: 600; /* Set a z-index higher than the image and intro */
+    width: auto;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin: 47.2px 0 23.6px 0;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid */
+    padding: 23.6px 0 23.6px 0;
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Add cursor pointer to indicate clickability */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05);
+    /* Slightly scale up image on hover */
+  }
+  
+  .lightbox {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 700;
+    /* Ensure lightbox is on top */
+  }
+  
+  .lightbox-content {
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .lightbox-content img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* comment */
+  
+  input, textarea {
+    width: 100%; /* Make input and textarea fields take full width */
+    padding: 10px 0 10px 10px; /* Add padding for better spacing inside the fields */
+    font-size: 16px; /* Make text inside the fields larger */
+    border-radius: 0px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    font: 1em sans-serif;
+  }
+  
+  textarea {
+    height: 150px; /* Make the textarea taller */
+  }
+  
+  /* Add some basic styling for form layout */
+  form { /* Limit the form width */
+    width: auto;
+    margin: 0 auto; /* Center the form */
+    padding: 47.2px 47.2px 47.2px 47.2px;
+
+  }
+  
+  label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Change color on hover */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 42, 49);
+    margin: 0; /* Remove default body margins */
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(33, 42, 49, 0.6);
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 0; /* Add padding for mobile */
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add padding for mobile */
+  }
+  
+  .header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Make navigation vertical on mobile */
+    align-items: center;
+    position: absolute; /* Position navigation off-screen initially */
+    top: 60px; /* Adjust top position as needed */
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 42, 49, 0.8); /* Add background to mobile menu */
+    text-align: center;
+    visibility: hidden; /* Hide navigation initially */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .header nav ul.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .header nav li {
+    display: block;
+    margin: 15px 0;
+  }
+  
+  .header nav p {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .nimi nav {
+    width: auto;
+  }
+  
+  .language nav {
+    width: auto;
+    text-align: left;
+    display: flex;
+  }
+
+  /* Style for the dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline;
+    left: 95%; /* Move to the right */
+    z-index: 1000;
+  }
+
+  .mobile-header h2 {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(47, 57, 68);
+  }
+
+/* Button styling (no text, only image) */
+.dropdown-button {
+  background-color: transparent; /* No background color */
+  border: none; /* No border */
+  cursor: pointer;
+  padding: 0; /* Remove any default padding */
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  right: 0; /* Align to the right */
+  left: auto; /* Override any left positioning */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu when hovering over the button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button img {
+  filter: brightness(0.8); /* Slightly darken the image when hovering */
+}
+  
+  nav {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid rgba(33, 42, 49, 0);
+    border-radius: 5px;
+    background-color: rgba(33, 42, 49, 0);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f1e5e5;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  header nav img {
+    height: 30px;
+    width: 25px;
+  }
+  
+  .language span {
+    font-size: 14px;
+    white-space: nowrap;
+    text-decoration: underline;
+    margin-left: 4px;
+  }
+  
+  .language span:hover {
+    text-decoration: none;
+  }
+  
+  .background-image {
+    width: 100%; /* Make background image responsive */
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .meta {
+    width: 100%;
+    height: auto; /* Adjust height for mobile */
+    object-fit: cover;
+  }
+  
+  .intro .introduction {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative; /* Use relative positioning for better control */
+    top: -4px;
+    color: white;
+    background-color: rgba(47, 57, 68, 1);
+    text-align: center;
+    padding: 20px; /* Add padding for mobile */
+    z-index: 500;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .introduction h1 {
+    margin: 23.6px 0 23.6px 0;
+    text-align: center;
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+  
+  .introduction p {
+    margin: 0 0 23.6px 0;
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  
+  .introduction-text {
+    width: 90%; /* Adjust width for mobile */
+    position: relative;
+    display: block;
+    text-align: left;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .title .introduction {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    color: white;
+    background-color: rgba(47, 57, 68, 1);
+    text-align: center;
+    padding: 20px; /* Add padding for mobile */
+    z-index: 500;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-text {
+    width: 90%; /* Adjust width for mobile */
+    height: auto;
+    position: relative;
+    padding: 23.6px 0 23.6px 0;
+    align-items: center;
+    text-align: left;
+    color: white;
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+  
+  .about-text p {
+    margin: 23.6px 0 23.6px 0;
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  
+  .footer-background {
+    width: 100%;
+    height: auto; /* Remove fixed height */
+    background-color: rgba(47, 57, 68, 1);
+    padding: 20px 0; /* Add padding for mobile */
+    margin: 0 auto;
+    position: relative; /* Remove sticky positioning */
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer-background2 {
+    width: 100%;
+    height: auto; /* Remove fixed height */
+    background-color: rgba(47, 57, 68, 1);
+    padding: 20px 0; /* Add padding for mobile */
+    margin: 0 auto;
+    position: relative; /* Remove sticky positioning */
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Make footer vertical on mobile */
+    align-items: center; /* Center content vertically */
+    background-color: rgba(47, 57, 68, 1);
+    color: white;
+    margin: 0 auto;
+    padding: 20px 0; /* Add padding for mobile */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .footer nav {
+    width: 100%; /* Make navigation full width on mobile */
+    height: auto;
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+  
+  .footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Make navigation vertical */
+    align-items: start;
+  }
+  
+  .footer nav h3 {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  
+  .footer nav a {
+    width: auto;
+    text-decoration: underline;
+    margin-bottom: 5px; /* Add spacing between links */
+  }
+  
+  .footer nav a:hover {
+    text-decoration: none;
+  }
+  
+  input, textarea {
+    width: 100%; /* Make input and textarea fields take full width */
+    padding: 10px; /* Add padding for better spacing inside the fields */
+    font-size: 16px; /* Make text inside the fields larger */
+    border-radius: 0px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    font: 1em sans-serif;
+  }
+  
+  textarea {
+    height: 150px; /* Make the textarea taller */
+  }
+  
+  /* Add some basic styling for form layout */
+  
+  label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Change color on hover */
+  }
+  
+  /*front page mini gallery*/
+  .gallery {
+    padding: 0px 23.6px 23.6px 23.6px; /* Adjust the top padding to move the gallery down */
+    position: relative; /* Add relative positioning */
+    z-index: 600; /* Set a z-index higher than the image and intro */
+    width: auto;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin: 47.2px 0 23.6px 0;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid */
+    padding: 23.6px 0 23.6px 0;
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Add cursor pointer to indicate clickability */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05);
+    /* Slightly scale up image on hover */
+  }
+
+  .lightbox {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 700;
+    /* Ensure lightbox is on top */
+  }
+  
+  .lightbox-content {
+    position: fixed;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .lightbox-content img {
+    position: relative;
+    width: 90%;
+    height: 90%;
+  }
+  
+  /* comment */
+  
+  input, textarea {
+    width: 100%; /* Make input and textarea fields take full width */
+    padding: 10px 0 10px 10px; /* Add padding for better spacing inside the fields */
+    font-size: 16px; /* Make text inside the fields larger */
+    border-radius: 0px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    font: 1em sans-serif;
+  }
+  
+  textarea {
+    height: 150px; /* Make the textarea taller */
+  }
+  
+  /* Add some basic styling for form layout */
+  form { /* Limit the form width */
+    width: auto;
+    margin: 0 auto; /* Center the form */
+    padding: 47.2px 47.2px 47.2px 47.2px;
+
+  }
+  
+  label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Change color on hover */
+  }
+}
