@@ -20,7 +20,7 @@ $paintings = $stmt->fetchAll(PDO::FETCH_ASSOC);
                      data-lightbox="gallery<?= $painting['id'] ?>">
             </div>
             <h3 style="color: white;"><?= $painting['title'] ?></h3>
-            <p style="color: white;"><?= $painting['description'] ?></p>
+            <h3 style="color: white;"><?= $painting['price'] . '€' ?></h3>
             <button class="add-to-cart" data-id="<?= $painting['id'] ?>">Add to Cart</button>
         </div>
         <?php endforeach; ?>
